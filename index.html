@@ -1,120 +1,237 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>شركة النيل للخدمات</title>
 
-  <meta name="description" content="شركة النيل للخدمات - نقدم حلولًا وخدمات احترافية للأفراد والشركات.">
+  <meta name="description"
+    content="شركة النيل للخدمات - حلول رقمية وخدمات احترافية للأفراد والشركات.">
 
   <style>
-    body {
-      margin: 0;
-      background: #f2f5f9;
-      font-family: Arial, sans-serif;
-      color: #333;
+
+    * {
+      box-sizing: border-box;
     }
 
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f9fc;
+      color: #123;
+    }
+
+    /* الشريط العلوي */
+
+    header {
+      background: #07345a;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      height: 65px;
+      max-width: 220px;
+      object-fit: contain;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 17px;
+    }
+
+    /* القسم الرئيسي */
+
     .hero {
-      padding: 80px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #eef4ff, #ffffff);
+      min-height: 600px;
+      padding: 80px 30px;
+
+      display: flex;
+      align-items: center;
+
+      background-image:
+        linear-gradient(
+          to left,
+          rgba(255,255,255,0.25),
+          rgba(255,255,255,0.85)
+        ),
+        url("hero-background-neel.png");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 600px;
     }
 
     .hero h1 {
-      font-size: 42px;
-      color: #1e3a8a;
-      margin-bottom: 20px;
+      font-size: 48px;
+      color: #06488a;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      color: #168dd1;
+      font-size: 25px;
     }
 
     .hero p {
-      font-size: 20px;
-      margin-bottom: 30px;
+      font-size: 21px;
+      line-height: 1.8;
     }
 
     .whatsapp-btn {
       display: inline-block;
+      margin-top: 20px;
+      padding: 16px 28px;
+
       background: #25D366;
       color: white;
-      padding: 15px 25px;
-      border-radius: 10px;
+
+      border-radius: 30px;
       text-decoration: none;
-      font-size: 18px;
+
+      font-size: 19px;
       font-weight: bold;
     }
 
-    .whatsapp-btn:hover {
-      background: #128C7E;
-    }
+    /* الخدمات */
 
     .services-section {
+      padding: 70px 20px;
       text-align: center;
-      padding: 50px 20px;
     }
 
     .services-section h2 {
-      font-size: 32px;
-      color: #1e3a8a;
+      color: #06488a;
+      font-size: 38px;
     }
 
     .services {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
       flex-wrap: wrap;
-      margin-top: 30px;
+      margin-top: 40px;
     }
 
     .card {
       background: white;
-      width: 250px;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 280px;
+      padding: 30px;
+      border-radius: 18px;
+
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     }
 
     .card h3 {
-      color: #1e3a8a;
+      color: #06488a;
+      font-size: 22px;
     }
 
     .card p {
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
+    /* الفوتر */
+
     footer {
-      text-align: center;
-      padding: 25px;
-      background: #1e3a8a;
+      background: #07345a;
       color: white;
-      margin-top: 30px;
+      text-align: center;
+      padding: 30px;
     }
+
+    /* الموبايل */
+
+    @media (max-width: 700px) {
+
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      .hero {
+        text-align: center;
+        justify-content: center;
+        min-height: 550px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
 
-  <section class="hero">
+  <header>
 
-    <h1>شركة النيل للخدمات</h1>
+    <img
+      src="logo-neel.png"
+      alt="شعار شركة النيل للخدمات"
+      class="logo">
 
-    <p>
-      نقدم حلولًا وخدمات احترافية للأفراد والشركات.
-    </p>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
 
-    <a
-      class="whatsapp-btn"
-      href="https://wa.me/249116506564?text=السلام%20عليكم،%20أريد%20الاستفسار%20عن%20خدماتكم"
-      target="_blank">
-      تواصل معنا عبر واتساب
-    </a>
+  </header>
+
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <h1>شركة النيل للخدمات</h1>
+
+      <h2>حلول رقمية .. لمستقبل أفضل</h2>
+
+      <p>
+        نقدم حلولًا وخدمات احترافية للأفراد
+        والشركات تساعدك على النمو والنجاح.
+      </p>
+
+      <a
+        class="whatsapp-btn"
+        href="https://wa.me/24911650656?text=السلام%20عليكم،%20أريد%20الاستفسار%20عن%20خدماتكم"
+        target="_blank">
+
+        تواصل معنا عبر واتساب
+
+      </a>
+
+    </div>
 
   </section>
 
 
-  <section class="services-section">
+  <section class="services-section" id="services">
 
     <h2>خدماتنا</h2>
+
+    <p>نقدم لك مجموعة من الخدمات المتكاملة بجودة عالية واحترافية.</p>
 
     <div class="services">
 
@@ -144,7 +261,40 @@
   </section>
 
 
+  <section id="about" class="services-section">
+
+    <h2>من نحن</h2>
+
+    <p>
+      شركة النيل للخدمات تقدم حلولًا رقمية وخدمات
+      احترافية تساعد الأفراد والشركات على تطوير أعمالهم.
+    </p>
+
+  </section>
+
+
+  <section id="contact" class="services-section">
+
+    <h2>تواصل معنا</h2>
+
+    <a
+      class="whatsapp-btn"
+      href="https://wa.me/249116506564"
+      target="_blank">
+
+      تواصل معنا عبر واتساب
+
+    </a>
+
+  </section>
+
+
   <footer>
+
     © 2026 شركة النيل للخدمات - جميع الحقوق محفوظة
+
   </footer>
 
+</body>
+
+</html>
