@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>شركة النيل للخدمات الرقمية والبرمجية</title>
+
+  <meta name="description" content="شركة النيل للخدمات الرقمية والبرمجية وإنشاء المواقع الإلكترونية للشركات في السودان، ولاية الخرطوم.">
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Tahoma, sans-serif;
+      background: #f5f9fc;
+      color: #17324d;
+      line-height: 1.8;
+    }
+
+    /* ===== الهيدر ===== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #07345a;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      width: 170px;
+      height: 65px;
+      object-fit: contain;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 10px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #25d366;
+    }
+
+    /* ===== الصفحة الرئيسية ===== */
+
+    .hero {
+      min-height: 600px;
+      padding: 90px 25px;
+      display: flex;
+      align-items: center;
+
+      background-image:
+        linear-gradient(
+          to left,
+          rgba(255, 255, 255, 0.25),
+          rgba(255, 255, 255, 0.90)
+        ),
+        url("hero-background-neel.png");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      color: #06488a;
+      font-size: 48px;
+    }
+
+    .hero h2 {
+      margin: 0 0 18px;
+      color: #168dd1;
+      font-size: 28px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin: 0 0 25px;
+    }
+
+    /* ===== الأزرار ===== */
+
+    .btn {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    .whatsapp:hover {
+      background: #128c7e;
+    }
+
+    /* ===== الأقسام ===== */
+
+    .section {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #06488a;
+      font-size: 34px;
+      margin: 0 0 12px;
+    }
+
+    .intro {
+      max-width: 750px;
+      margin: 0 auto 35px;
+      font-size: 18px;
+    }
+
+    /* ===== الخدمات ===== */
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      width: 330px;
+      padding: 30px 25px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .icon {
+      font-size: 45px;
+    }
+
+    .card h3 {
+      color: #06488a;
+      margin: 10px 0;
+    }
+
+    /* ===== المميزات ===== */
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      width: 230px;
+      padding: 20px;
+    }
+
+    .feature h3 {
+      color: #06488a;
+      margin: 10px 0;
+    }
+
+    /* ===== من نحن ===== */
+
+    .about {
+      background: white;
+    }
+
+    .about-box {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    /* ===== الموقع ===== */
+
+    .location {
+      background: #eef6fc;
+    }
+
+    .location-box {
+      max-width: 800px;
+      margin: auto;
+      font-size: 18px;
+    }
+
+    /* ===== التواصل ===== */
+
+    .contact {
+      background: white;
+    }
+
+    /* ===== الفوتر ===== */
+
+    footer {
+      background: #07345a;
+      color: white;
+      text-align: center;
+      padding: 28px 20px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    /* ===== الهاتف ===== */
+
+    @media (max-width: 700px) {
+
+      header {
+        flex-direction: column;
+      }
+
+      .logo {
+        width: 150px;
+      }
+
+      nav a {
+        font-size: 13px;
+        padding: 5px;
+      }
+
+      .hero {
+        min-height: 540px;
+        text-align: center;
+        justify-content: center;
+        padding: 70px 18px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero h2 {
+        font-size: 23px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .section {
+        padding: 55px 15px;
+      }
+
+      .section h2 {
+        font-size: 29px;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 360px;
+      }
+
+      .feature {
+        width: 45%;
+        min-width: 140px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ===== الهيدر ===== -->
+
+  <header>
+
+    <img
+      class="logo"
+      src="logo-neel.png"
+      alt="شعار شركة النيل للخدمات">
+
+    <nav>
+
+      <a href="#home">الرئيسية</a>
+
+      <a href="#services">خدماتنا</a>
+
+      <a href="#features">مميزاتنا</a>
+
+      <a href="#about">من نحن</a>
+
+      <a href="#location">موقعنا</a>
+
+      <a href="#contact">تواصل معنا</a>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ===== الرئيسية ===== -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <h1>
+        شركة النيل للخدمات
+      </h1>
+
+      <h2>
+        حلول رقمية لمستقبل أفضل
+      </h2>
+
+      <p>
+        نقدم خدمات رقمية وبرمجية وحلولًا إلكترونية
+        تساعد الشركات والأعمال على تطوير حضورها الرقمي.
+      </p>
+
+      <a
+        class="btn whatsapp"
+        href="#contact">
+
+        تواصل معنا
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===== الخدمات ===== -->
+
+  <section class="section" id="services">
+
+    <h2>
+      خدماتنا
+    </h2>
+
+    <p class="intro">
+      نقدم حلولًا رقمية وبرمجية تساعد الشركات والأعمال
+      على بناء حضور احترافي على الإنترنت.
+    </p>
+
+
+    <div class="cards">
+
+
+      <div class="card">
+
+        <div class="icon">
+          💻
+        </div>
+
+        <h3>
+          الخدمات الرقمية والبرمجية
+        </h3>
+
+        <p>
+          حلول رقمية وبرمجية تساعد الشركات والأعمال
+          على تطوير حضورها الرقمي وتحسين طريقة عملها.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">
+          🌐
+        </div>
+
+        <h3>
+          إنشاء مواقع إلكترونية للشركات
+        </h3>
+
+        <p>
+          تصميم وإنشاء مواقع إلكترونية احترافية
+          ومتجاوبة مع الهاتف والكمبيوتر وتناسب نشاط كل شركة.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- ===== المميزات ===== -->
+
+  <section class="section" id="features">
+
+    <h2>
+      مميزاتنا
+    </h2>
+
+    <p class="intro">
+      نهتم بتقديم حلول رقمية بسيطة وعصرية
+      تناسب احتياجات الشركات والأعمال.
+    </p>
+
+
+    <div class="features">
+
+
+      <div class="feature">
+
+        <div class="icon">
+          ⚡
+        </div>
+
+        <h3>
+          سرعة التنفيذ
+        </h3>
+
+        <p>
+          تنفيذ المشاريع بصورة منظمة
+          وبأسرع وقت ممكن.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="icon">
+          ⭐
+        </div>
+
+        <h3>
+          جودة واحترافية
+        </h3>
+
+        <p>
+          اهتمام بجودة التصميم
+          وتجربة المستخدم.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="icon">
+          📱
+        </div>
+
+        <h3>
+          متوافق مع الهاتف
+        </h3>
+
+        <p>
+          تصميمات تعمل على الهاتف
+          والكمبيوتر والأجهزة المختلفة.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="icon">
+          🤝
+        </div>
+
+        <h3>
+          دعم وتواصل
+        </h3>
+
+        <p>
+          تواصل مستمر لفهم احتياجات العميل
+          ومتابعة المشروع.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <!-- ===== من نحن ===== -->
+
+  <section class="section about" id="about">
+
+    <h2>
+      من نحن
+    </h2>
+
+    <div class="about-box">
+
+      <p>
+        شركة النيل للخدمات تهتم بتقديم الخدمات
+        الرقمية والبرمجية وإنشاء المواقع الإلكترونية
+        للشركات والأعمال.
+      </p>
+
+      <p>
+        هدفنا هو مساعدة الشركات على بناء حضور
+        احترافي على الإنترنت والاستفادة من الحلول
+        الرقمية الحديثة.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===== الموقع ===== -->
+
+  <section class="section location" id="location">
+
+    <h2>
+      موقعنا
+    </h2>
+
+    <div class="location-box">
+
+      <div class="icon">
+        📍
+      </div>
+
+      <h3>
+        السودان - ولاية الخرطوم
+      </h3>
+
+      <p>
+        نقدم خدماتنا الرقمية والبرمجية
+        للشركات والأعمال في السودان.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ===== التواصل ===== -->
+
+  <section class="section contact" id="contact">
+
+    <h2>
+      تواصل معنا
+    </h2>
+
+    <p class="intro">
+      لديك مشروع أو تريد إنشاء موقع لشركتك؟
+      تواصل معنا مباشرة.
+    </p>
+
+    <p>
+      <strong>
+        واتساب:
+      </strong>
+      سنضع رقم واتساب الصحيح هنا.
+    </p>
+
+  </section>
+
+
+  <!-- ===== الفوتر ===== -->
+
+  <footer>
+
+    <p>
+      © 2026 شركة النيل للخدمات - جميع الحقوق محفوظة
+    </p>
+
+    <p>
+      السودان - ولاية الخرطوم
+    </p>
+
+  </footer>
+
+
+</body>
+
+</html>
